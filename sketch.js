@@ -80,19 +80,19 @@ function draw() {
   if (arrowGroup.isTouching(greenB)) {
     greenB.destroyEach();
     arrowGroup.destroyEach();
-    score=score+3;
+    score=score+1;
   }
 
   if (arrowGroup.isTouching(blueB)) {
     blueB.destroyEach();
     arrowGroup.destroyEach();
-    score=score+2;
+    score=score+5;
   }
 
   if (arrowGroup.isTouching(pinkB)) {
     pinkB.destroyEach();
     arrowGroup.destroyEach();
-    score=score+1;
+    score=score+3;
   }
 
   drawSprites();
@@ -113,7 +113,7 @@ function blueBalloon() {
   blue.addImage(blue_balloonImage);
   blue.velocityX = 3;
   blue.lifetime = 150;
-  blue.scale = 0.1;
+  blue.scale = 0.05;
   blueB.add(blue);
 }
 
@@ -152,3 +152,4 @@ function pinkBalloon() {
   arrowGroup.add(arrow);
    
 }
+ 
